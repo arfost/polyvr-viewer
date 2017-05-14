@@ -28,7 +28,7 @@ the configuration is in the form :
 
 The configuration of the component
 
-  ```json       
+  ```js      
  {
   start:assetId,
   assets:{
