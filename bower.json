@@ -1,6 +1,6 @@
 {
   "name": "vr-viewer",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "Container to display a VR web view",
   "authors": [
     "Arfost"
@@ -13,10 +13,10 @@
   "main": "vr-viewer.html",
   "repository": {
     "type": "git",
-    "url": "git://github.com/arfost/vr-viewer.git"
+    "url": "git@github.com:arfost/polyvr-viewer.git"
   },
   "license": "http://github.com/arfost/LICENSE.txt",
-  "homepage": "https://github.com/arfost/vr-viewer",
+  "homepage": "https://github.com/arfost/polyvr-viewer",
   "ignore": [],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.1.0"
