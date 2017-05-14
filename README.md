@@ -4,45 +4,31 @@
 
 `vr-viewer` is a container to display a VR web view using the google vr webview.
 https://github.com/googlevr/vrview
+
 It can display either one picture, or a set with hotspot to link them.
 
 You use the configuration property to give it an object with all the infos.
-
-<!---
-```html
-<custom-element-demo>
-<template>
-<script src="../webcomponentsjs/webcomponents-lite.js"></script>
-<link rel="import" href="vr-viewer.html">
-<next-code-block></next-code-block>
-</template>
-</custom-element-demo>
-```
--->
-```html
-
-```
 
 <!---
 ```
 <custom-element-demo>
   <template>
     <script src="../webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="paper-avatar.html">
+    <link rel="import" href="vr-viewer.html">
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
 ```
 -->
 ```html
-<vr-viewer configuration='{"start":"img001", "assets": {"img001":{"url":"https://storage.googleapis.com/vr-walk.appspot.com/walk/IMG_20170512_180048.vr-converted.jpg", "is_autopan_off":true,"is_stereo":true, "type":"image", "hotspot":{"hp1":{"pitch": 0, "yaw": 125, "radius": 0.05, "distance": 1, "destination":"img002"} }},"img002":{"url":"https://storage.googleapis.com/vr-walk.appspot.com/walk/IMG_20170512_180350.vr-converted.jpg", "is_stereo":true, "is_autopan_off":false, "type":"image", "hotspot":{"hp1":{"pitch": 0, "yaw": 125, "radius": 0.05, "distance": 1, "destination":"img001"} }}} }' >
-          </vr-viewer>
+<vr-viewer configuration='{"start":"img001", "assets": {"img001":{"url":"https://storage.googleapis.com/vr-walk.appspot.com/walk/IMG_20170512_180048.vr-converted.jpg", "is_autopan_off":true,"is_stereo":true, "type":"image", "hotspot":{"hp1":{"pitch": 0, "yaw": 125, "radius": 0.05, "distance": 1, "destination":"img002"} }},"img002":{"url":"https://storage.googleapis.com/vr-walk.appspot.com/walk/IMG_20170512_180350.vr-converted.jpg", "is_stereo":true, "is_autopan_off":false, "type":"image", "hotspot":{"hp1":{"pitch": 0, "yaw": 125, "radius": 0.05, "distance": 1, "destination":"img001"} }}} }'></vr-viewer>
 ```
 
 the configuration is in the form :
 
 The configuration of the component
-          
+
+  ```json       
  {
   start:assetId,
   assets:{
@@ -69,3 +55,4 @@ The configuration of the component
  }
 
 Because of the underliying iframe using by the Google VR webview the url for the image MUST be absolute, and the CORS must be authorized on them
+```
