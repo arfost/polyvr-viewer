@@ -1,0 +1,49 @@
+<!doctype html>
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+<html lang="en">
+<head>
+  <title>paper-card demo</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+  <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+  <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+
+  <link rel="import" href="../vr-viewer.html">
+
+  <style is="custom-style" include="demo-pages-shared-styles">
+    demo-snippet {
+      --demo-snippet-demo: {
+        background: var(--paper-grey-200);
+        padding: 8px;
+      };
+      --demo-snippet-code: {
+        max-height: 300px;
+      };
+    }
+  </style>
+
+</head>
+<body unresolved>
+  <body unresolved>
+    <div class="vertical-section-container centered">
+      <demo-snippet>
+        <template>
+          <vr-viewer configuration='{"start":"img001", "assets": {"img001":{"url":"https://storage.googleapis.com/vr-walk.appspot.com/walk/IMG_20170512_180048.vr-converted.jpg", "is_autopan_off":true,"is_stereo":true, "type":"image", "hotspot":{"hp1":{"pitch": 0, "yaw": 125, "radius": 0.05, "distance": 1, "destination":"img002"} }},"img002":{"url":"https://storage.googleapis.com/vr-walk.appspot.com/walk/IMG_20170512_180350.vr-converted.jpg", "is_stereo":true, "is_autopan_off":false, "type":"image", "hotspot":{"hp1":{"pitch": 0, "yaw": 125, "radius": 0.05, "distance": 1, "destination":"img001"} }}} }' >
+          </vr-viewer>
+        </template>
+      </demo-snippet>
+    </div>
+</body>
+</html>
